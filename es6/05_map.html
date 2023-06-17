@@ -19,12 +19,11 @@
         //$.each(arr, function(index, items){})
         arr.map((item, index) => {
             //React에서는 return이 없으면 값이 나오지 않는다. 반드시 써야 한다.
-            return(console.log(index, item))
+            return console.log(index, item)
         })
 
         data.map((item, index) => {
-            //React에서는 return이 없으면 값이 나오지 않는다. 반드시 써야 한다.
-            return(console.log(item.id, item.name, item.age))
+            return console.log(item.id, item.name, item.age)
         })
 
         //처리되는 문장이 하나일때는 {}, return 생략할 수 있다.
@@ -34,6 +33,7 @@
     </script>
 </body>
 </html>
+
 
 <!-- 
 map (반복문)
