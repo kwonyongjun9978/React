@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data = [
+            {id: 1, name: '음바페', age: 23},
+            {id: 2, name: '메시', age: 35},
+            {id: 3, name: '손흥민', age: 32},
+            {id: 4, name: '김민재', age: 28},
+            {id: 5, name: '권용준', age: 30}
+        ]
+        console.log(data)
+
+        const data2 = [...data]
+        console.log(data2)
+
+        //추가 => id: 6, name: '네이마르', age:32 
+        const data3 = [...data, {id: 6, name: '네이마르', age: 32}]
+        console.log(data3)
+
+        //문제 - id가 6번인 '네이마르'를 '해리케인'으로 변경하고, 나이를 32에서 31로 변경
+        const data4 = data3.map((item, index) => {
+            if(item.id === 6){
+                return {...item, name: '해리케인', age: 31}
+            }else{
+                return item
+            }
+        })
+        console.log(data4);
+
+        //react에서 if문은 복잡해서 잘 안쓴다...
+        const data5 = data3.map(item => item.id === 6 ? {...item, name: '해리케인', age: 31} : item)
+        console.log(data5);
+    </script>
+</body>
+</html>
