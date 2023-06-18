@@ -8,6 +8,7 @@ import Test5 from './component/Test5';
 
 const App = () => {
   
+  //JSX (JavaScript 문법 확장) 반환
   return (
     <div> {/* 최상단에서 반드시 div로 감싸주어야 한다. */}
       <Dog /> 
@@ -27,4 +28,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; //App 컴포넌트 모듈 내보내기

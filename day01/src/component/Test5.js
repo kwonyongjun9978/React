@@ -13,7 +13,6 @@ const Test5 = () => {
                       done={true}/>
             <hr/>
             <Test5Sub name='코난' addr='부산' color='skyblue' bgcolor='hotpink' /> 
-
         </div>
     );
 };
