@@ -17,7 +17,7 @@ const Test02 = () => {
                 {
                     //반드시 key를 주어야 한다.
                     arr.map((item, index) => {
-                        return(<li key={index}>{index} : {item}</li>)
+                        return <li key={index}>{index} : {item}</li>
                     })
                 }
             </ul>
@@ -25,7 +25,7 @@ const Test02 = () => {
             <ul style={{ border: '1px solid blue'}}>
                 {
                     data.map((item) => {
-                        return(<li key={item.id}>{item.id} : {item.name}</li>)
+                        return <li key={item.id}>{item.id} : {item.name}</li> 
                     })
                 }
             </ul>

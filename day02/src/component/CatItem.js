@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CatItem = ({item}) => {
-    const {id, img, title} = item
+    const {id, img, title} = item //비구조할당
     return (
         <li>
             <a href='#'>
