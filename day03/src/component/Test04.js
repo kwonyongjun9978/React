@@ -6,7 +6,6 @@ const Test04 = () => {
     const [name, setName] = useState('호랑이')
     
     const onInputName = (e) => {
-
         console.log(e);
         console.log(e.target);
 

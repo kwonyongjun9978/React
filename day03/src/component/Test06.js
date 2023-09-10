@@ -14,10 +14,11 @@ const Test06 = () => {
 
         setData({
             ...data, //1.객체를 복사 2.원하는 값(name, id, pwd)만 수정
-            //복사하지 않으면 전에 있던 값이 초기화된다.
+                     //복사하지 않으면 전에 있던 값이 초기화된다.
             [name]: value
         })
     }
+    
     const onReset = () => {
         setData({
             name:'',
